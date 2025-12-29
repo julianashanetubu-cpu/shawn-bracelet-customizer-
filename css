@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 15px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.metal-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.metal-toggle button {
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.metal-toggle .active {
+  background: white;
+  color: black;
+}
+
+.bracelet {
+  background: white;
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  overflow-x: auto;
+  min-height: 60px;
+}
+
+.charm {
+  background: #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.charms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.charms button {
+  flex: 1 1 48%;
+  padding: 8px;
+}
+
+.code-box input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+.code-box button {
+  width: 100%;
+  padding: 8px;
+}
+
+.clear {
+  width: 100%;
+  margin-top: 10px;
+  background: red;
+  color: white;
+  padding: 8px;
+}
