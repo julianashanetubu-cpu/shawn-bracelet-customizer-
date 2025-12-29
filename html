@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Italian Charm Customizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h2>Build Your Own Italian Charm Bracelet</h2>
+
+  <!-- Metal toggle -->
+  <div class="metal-toggle">
+    <button id="silver" class="active" onclick="setMetal('Silver')">SILVER</button>
+    <button id="gold" onclick="setMetal('Gold')">GOLD</button>
+  </div>
+
+  <!-- Bracelet -->
+  <div id="bracelet" class="bracelet"></div>
+
+  <!-- Info -->
+  <div class="info">
+    <p>Total: ₱<span id="total">0</span></p>
+    <p>Charms: <span id="count">0</span>/18</p>
+  </div>
+
+  <!-- Charm list -->
+  <h3>Select Charms</h3>
+  <div class="charms">
+    <button onclick="addCharm('S81', 35)">Hot Wheels</button>
+    <button onclick="addCharm('S40', 35)">Miu Miu</button>
+    <button onclick="addCharm('S64', 35)">North Face</button>
+    <button onclick="addCharm('S90', 35)">Flower</button>
+    <button onclick="addCharm('S91', 35)">Bow</button>
+    <button onclick="addCharm('S95', 35)">Cat</button>
+    <button onclick="addCharm('S50', 35)">Music</button>
+  </div>
+
+  <!-- Code -->
+  <div class="code-box">
+    <p>Copy your bracelet code ❤️</p>
+    <input type="text" id="code" readonly>
+    <button onclick="copyCode()">Copy Bracelet Code</button>
+  </div>
+
+  <button class="clear" onclick="clearBracelet()">Clear Bracelet</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
